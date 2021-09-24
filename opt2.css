@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* body {
+	line-height: 1;
+} */
+/* ol, ul {
+	list-style: none;
+} */
+/* blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+
+/* universal selector */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color:#FBFFFB;
+    color: #4f4f4f;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 3% 0 3%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 27vh;
+    width: 100%;
+    margin: 3% 0 3% 0;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+div.links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 2%;
+    
+}
+
+.links :nth-child(1){
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.link :nth-child(4){
+    padding-right: 1%; 
+}
+
+.links a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+   background-image: url(./Dionis\ Profile.jpg);
+   display: flex;
+    background-size: contain;
+    background-position: center;
+    /* background: no-repeat; */
+    object-fit: contain;
+    height: 55vh;
+    /* width: 103%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2% 2% 2%;
+    background-repeat: no-repeat;
+}
+
+#main button{
+    border-radius: 10px;
+}
+
+#main h2 {
+    background-color: none;
+    font-size: 5rem;
+    color: yellow;
+}
+
+#main button {
+    width: 50%;
+    height: 10%;
+    text-align: center;
+    letter-spacing: .50rem;
+    font-weight: bold;
+
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18%;
+}
+
+#body section{
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    margin: 12% 0;
+    text-align: center;
+
+}
+
+#body .muaythai img{
+    /* height: 70%; */
+}
+
+#body .zen {
+    /* height: 108vh; */
+    /* margin-top: -42%; */
+}
+
+#body .videogames {
+    /* height: 108vh;
+    margin-top: -80%; */
+}
+
+#body .moth {
+    /* height: 108vh;
+
+    margin-top: -76%; */
+}
+
+#body .cardinal {
+    /* height: 108vh;
+    /* margin: 12%; */
+    /* margin-top: -73%; */ */
+}
+
+#body .guitar {
+    /* height: 108vh; */
+    /* margin: 12%; */
+    /* margin-top: -99%; */
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: grey;
+    margin-top: 10%;
+}
+
+footer button {
+    width: 104px;
+    height: 46px;
+    font-weight: bold;
+    letter-spacing: .15rem;
+    border-radius: 10px;
+}
+
+@media(min-width:500px) {
+    #body{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #body section {
+        flex-basis: 40%;
+    }
+    #body section img{
+        height: 150px;
+        object-fit: cover;
+    }
+}
+
+@media(min-width:800px) {
+    .links a{
+        height: 45px;
+    }
+
+    #main button {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    #body section {
+        height: 80px;
+    }
+}
+
+@media(min-width:1200px){
+    #body section {
+        flex-basis: 600px;
+        height: 800px;
+    }
+
+    #body section img {
+        height: 90%;
+    }
+}
+
+@media(min-width:1366px){
+    #main h2 {
+        width: 400px;
+        text-align: center;
+        letter-spacing: 0.6rem;
+    }
+
+    #main button{
+        width: 20%;
+    }
+
+    footer {
+        margin-top: 5%;
+    }
+}
+
