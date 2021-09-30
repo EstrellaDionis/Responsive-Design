@@ -155,8 +155,9 @@ div.links{
 
 #body {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin-bottom: 18%;
+    flex-flow: row wrap;
 }
 
 #body section{
@@ -168,36 +169,18 @@ div.links{
 
 }
 
-#body .muaythai img{
-    /* height: 70%; */
+#body .muaythai, #body .videogames, #body .cardinal {
+    width: 40%;
+    margin-right: 12%;
+    margin-left: 5%;
 }
 
-#body .zen {
-    /* height: 108vh; */
-    /* margin-top: -42%; */
-}
-
-#body .videogames {
-    /* height: 108vh;
-    margin-top: -80%; */
+#body .zen, .moth, .guitar {
+    width: 40%;
 }
 
 #body .moth {
-    /* height: 108vh;
 
-    margin-top: -76%; */
-}
-
-#body .cardinal {
-    /* height: 108vh;
-    /* margin: 12%; */
-    /* margin-top: -73%; */ */
-}
-
-#body .guitar {
-    /* height: 108vh; */
-    /* margin: 12%; */
-    /* margin-top: -99%; */
 }
 footer {
     display: flex;
